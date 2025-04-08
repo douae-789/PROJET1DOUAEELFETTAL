@@ -486,8 +486,20 @@ noms = ["Papin", "Bakayoko", "Drogba"]
 
 for p, n in zip(prenoms, noms):
     print(p, n)
-```
+```{code-cell}
+# Ex2
+l1=[2,5,8,12,14,3]
+l2=[3,1,-1]
 
+
+def intersection(l1,l2):
+  l3=list()
+  for e in l1:
+    if e in l2:
+        l3.append(e)
+  return l3
+print(intersection(l1,l2))
+```
 On peut même parcourir plus de deux listes simultanément :
 
 ```{code-cell}
